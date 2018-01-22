@@ -621,7 +621,7 @@ public class NumberHrdView extends View{
 
     }
 
-    //第2格第1竖行向右边移动
+    //第1格第1竖行向右边移动
     private void resert_left_1_1() {
         if(upY>padding&&upY<floatY+padding){
             createView_9(padding,floatX+padding,padding,floatY+padding);
@@ -634,7 +634,7 @@ public class NumberHrdView extends View{
             view_1_8();
         }
     }
-    //第2格第2竖行向右边移动
+    //第1格第2竖行向右边移动
     private void resert_left_1_2() {
         if(upY>padding&&upY<floatY+padding){
             createView_9(padding+floatX,floatX*2+padding,padding,floatY+padding);
@@ -648,7 +648,7 @@ public class NumberHrdView extends View{
         }
     }
 
-    //第2格第2行向上移动
+    //第1格第2行向上移动
     private void resert_up_1_2() {
         if(upX>padding&&upX<floatX+padding){//第1格
             createView_9(padding,floatX+padding,padding+floatY,floatY*2+padding);
@@ -661,7 +661,7 @@ public class NumberHrdView extends View{
             view_1_3();
         }
     }
-    //第2格第3行向上移动
+    //第1格第3行向上移动
     private void resert_up_1_1() {
         if(upX>padding&&upX<floatX+padding){//第2格
             createView_9(padding,floatX+padding,padding+floatY*2,mHeight-padding);
@@ -675,7 +675,7 @@ public class NumberHrdView extends View{
         }
     }
 
-    //第2格第1行向下移动
+    //第1格第1行向下移动
     private void resert_down_1_1(){
         if(upX>padding&&upX<floatX+padding){//第4格
             createView_9(padding,floatX+padding,padding,floatY+padding);
@@ -688,7 +688,7 @@ public class NumberHrdView extends View{
             view_1_6();
         }
     }
-    //第2格第2行向下移动
+    //第1格第2行向下移动
     private void resert_down_1_2() {
         if(upX>padding&&upX<floatX+padding){//第7格
             createView_9(padding,floatX+padding,padding+floatY,floatY*2+padding);
@@ -701,7 +701,7 @@ public class NumberHrdView extends View{
             view_1_9();
         }
     }
-    //第2格移动到第1格
+    //第1格移动到第1格
     private void view_1_1(){
         rect1_x_0=padding;
         rect1_x_1=floatX+padding;
@@ -710,7 +710,7 @@ public class NumberHrdView extends View{
         rect1_x_t=(floatX+padding)/2;
         rect1_y_t=(floatY+padding)/2;
     }
-    //第2格移动到第2格
+    //第1格移动到第2格
     private void view_1_2(){
         rect1_x_0=padding+floatX;
         rect1_x_1=floatX*2+padding;
@@ -719,7 +719,7 @@ public class NumberHrdView extends View{
         rect1_x_t=(floatX*2+padding)-floatX_6;
         rect1_y_t=(floatY+padding)/2;
     }
-    //第2格移动到第2格
+    //第1格移动到第3格
     private void view_1_3(){
         rect1_x_0=padding+floatX*2;
         rect1_x_1=mWidth-padding;
@@ -728,7 +728,7 @@ public class NumberHrdView extends View{
         rect1_x_t=(mWidth-padding)-floatX_6;
         rect1_y_t=(floatY+padding)/2;
     }
-    //第6格移动到第2格
+    //第1格移动到第4格
     private void view_1_4(){
         rect1_x_0=padding;
         rect1_x_1=floatX+padding;
@@ -737,7 +737,7 @@ public class NumberHrdView extends View{
         rect1_x_t=(floatX+padding)/2;
         rect1_y_t=(floatY*2+padding)-floatY_6;
     }
-    //第2格移动到第2格
+    //第1格移动到第5格
     private void view_1_5(){
         rect1_x_0=padding+floatX;
         rect1_x_1=floatX*2+padding;
@@ -746,7 +746,7 @@ public class NumberHrdView extends View{
         rect1_x_t=(floatX*2+padding)-floatX_6;
         rect1_y_t=(floatY*2+padding)-floatY_6;
     }
-    //第2格移动到第2格
+    //第1格移动到第6格
     private void view_1_6(){
         rect1_x_0=padding+floatX*2;
         rect1_x_1=mWidth-padding;
@@ -755,7 +755,7 @@ public class NumberHrdView extends View{
         rect1_x_t=(mWidth-padding)-floatX_6;
         rect1_y_t=(floatY*2+padding)-floatY_6;
     }
-    //第2格移动到第2格
+    //第1格移动到第7格
     private void view_1_7(){
         rect1_x_0=padding;
         rect1_x_1=floatX+padding;
@@ -764,7 +764,7 @@ public class NumberHrdView extends View{
         rect1_x_t=(floatX+padding)/2;
         rect1_y_t=(mHeight-padding)-floatY_6;
     }
-    //第2格移动到第2格
+    //第1格移动到第8格
     private void view_1_8(){
         rect1_x_0=padding+floatX;
         rect1_x_1=floatX*2+padding;
@@ -773,7 +773,7 @@ public class NumberHrdView extends View{
         rect1_x_t=(floatX*2+padding)-floatX_6;
         rect1_y_t=(mHeight-padding)-floatY_6;
     }
-    //第2格移动到第9格
+    //第1格移动到第9格
     private void view_1_9(){
         rect1_x_0=padding+floatX*2;
         rect1_x_1=mWidth-padding;
@@ -908,7 +908,7 @@ public class NumberHrdView extends View{
         rect2_x_t=(floatX*2+padding)-floatX_6;
         rect2_y_t=(floatY+padding)/2;
     }
-    //第2格移动到第2格
+    //第2格移动到第3格
     private void view_2_3(){
         rect2_x_0=padding+floatX*2;
         rect2_x_1=mWidth-padding;
@@ -917,7 +917,7 @@ public class NumberHrdView extends View{
         rect2_x_t=(mWidth-padding)-floatX_6;
         rect2_y_t=(floatY+padding)/2;
     }
-    //第6格移动到第2格
+    //第2格移动到第4格
     private void view_2_4(){
         rect2_x_0=padding;
         rect2_x_1=floatX+padding;
@@ -926,7 +926,7 @@ public class NumberHrdView extends View{
         rect2_x_t=(floatX+padding)/2;
         rect2_y_t=(floatY*2+padding)-floatY_6;
     }
-    //第2格移动到第2格
+    //第2格移动到第5格
     private void view_2_5(){
         rect2_x_0=padding+floatX;
         rect2_x_1=floatX*2+padding;
@@ -935,7 +935,7 @@ public class NumberHrdView extends View{
         rect2_x_t=(floatX*2+padding)-floatX_6;
         rect2_y_t=(floatY*2+padding)-floatY_6;
     }
-    //第2格移动到第2格
+    //第2格移动到第6格
     private void view_2_6(){
         rect2_x_0=padding+floatX*2;
         rect2_x_1=mWidth-padding;
@@ -944,7 +944,7 @@ public class NumberHrdView extends View{
         rect2_x_t=(mWidth-padding)-floatX_6;
         rect2_y_t=(floatY*2+padding)-floatY_6;
     }
-    //第2格移动到第2格
+    //第2格移动到第7格
     private void view_2_7(){
         rect2_x_0=padding;
         rect2_x_1=floatX+padding;
@@ -953,7 +953,7 @@ public class NumberHrdView extends View{
         rect2_x_t=(floatX+padding)/2;
         rect2_y_t=(mHeight-padding)-floatY_6;
     }
-    //第2格移动到第2格
+    //第2格移动到第8格
     private void view_2_8(){
         rect2_x_0=padding+floatX;
         rect2_x_1=floatX*2+padding;
@@ -1106,7 +1106,7 @@ public class NumberHrdView extends View{
         rect3_x_t=(mWidth-padding)-floatX_6;
         rect3_y_t=(floatY+padding)/2;
     }
-    //第6格移动到第3格
+    //第3格移动到第4格
     private void view_3_4(){
         rect3_x_0=padding;
         rect3_x_1=floatX+padding;
@@ -1115,7 +1115,7 @@ public class NumberHrdView extends View{
         rect3_x_t=(floatX+padding)/2;
         rect3_y_t=(floatY*2+padding)-floatY_6;
     }
-    //第3格移动到第3格
+    //第3格移动到第5格
     private void view_3_5(){
         rect3_x_0=padding+floatX;
         rect3_x_1=floatX*2+padding;
@@ -1124,7 +1124,7 @@ public class NumberHrdView extends View{
         rect3_x_t=(floatX*2+padding)-floatX_6;
         rect3_y_t=(floatY*2+padding)-floatY_6;
     }
-    //第3格移动到第3格
+    //第3格移动到第6格
     private void view_3_6(){
         rect3_x_0=padding+floatX*2;
         rect3_x_1=mWidth-padding;
@@ -1133,7 +1133,7 @@ public class NumberHrdView extends View{
         rect3_x_t=(mWidth-padding)-floatX_6;
         rect3_y_t=(floatY*2+padding)-floatY_6;
     }
-    //第3格移动到第3格
+    //第3格移动到第7格
     private void view_3_7(){
         rect3_x_0=padding;
         rect3_x_1=floatX+padding;
@@ -1142,7 +1142,7 @@ public class NumberHrdView extends View{
         rect3_x_t=(floatX+padding)/2;
         rect3_y_t=(mHeight-padding)-floatY_6;
     }
-    //第3格移动到第3格
+    //第3格移动到第8格
     private void view_3_8(){
         rect3_x_0=padding+floatX;
         rect3_x_1=floatX*2+padding;
@@ -1295,7 +1295,7 @@ public class NumberHrdView extends View{
         rect4_x_t=(mWidth-padding)-floatX_6;
         rect4_y_t=(floatY+padding)/2;
     }
-    //第6格移动到第4格
+    //第4格移动到第4格
     private void view_4_4(){
         rect4_x_0=padding;
         rect4_x_1=floatX+padding;
@@ -1304,7 +1304,7 @@ public class NumberHrdView extends View{
         rect4_x_t=(floatX+padding)/2;
         rect4_y_t=(floatY*2+padding)-floatY_6;
     }
-    //第4格移动到第4格
+    //第4格移动到第5格
     private void view_4_5(){
         rect4_x_0=padding+floatX;
         rect4_x_1=floatX*2+padding;
@@ -1313,7 +1313,7 @@ public class NumberHrdView extends View{
         rect4_x_t=(floatX*2+padding)-floatX_6;
         rect4_y_t=(floatY*2+padding)-floatY_6;
     }
-    //第4格移动到第4格
+    //第4格移动到第6格
     private void view_4_6(){
         rect4_x_0=padding+floatX*2;
         rect4_x_1=mWidth-padding;
@@ -1322,7 +1322,7 @@ public class NumberHrdView extends View{
         rect4_x_t=(mWidth-padding)-floatX_6;
         rect4_y_t=(floatY*2+padding)-floatY_6;
     }
-    //第4格移动到第4格
+    //第4格移动到第7格
     private void view_4_7(){
         rect4_x_0=padding;
         rect4_x_1=floatX+padding;
@@ -1331,7 +1331,7 @@ public class NumberHrdView extends View{
         rect4_x_t=(floatX+padding)/2;
         rect4_y_t=(mHeight-padding)-floatY_6;
     }
-    //第4格移动到第4格
+    //第4格移动到第8格
     private void view_4_8(){
         rect4_x_0=padding+floatX;
         rect4_x_1=floatX*2+padding;
@@ -1484,7 +1484,7 @@ public class NumberHrdView extends View{
         rect5_x_t=(mWidth-padding)-floatX_6;
         rect5_y_t=(floatY+padding)/2;
     }
-    //第6格移动到第4格
+    //第5格移动到第4格
     private void view_5_4(){
         rect5_x_0=padding;
         rect5_x_1=floatX+padding;
@@ -1502,7 +1502,7 @@ public class NumberHrdView extends View{
         rect5_x_t=(floatX*2+padding)-floatX_6;
         rect5_y_t=(floatY*2+padding)-floatY_6;
     }
-    //第5格移动到第5格
+    //第5格移动到第6格
     private void view_5_6(){
         rect5_x_0=padding+floatX*2;
         rect5_x_1=mWidth-padding;
@@ -1511,7 +1511,7 @@ public class NumberHrdView extends View{
         rect5_x_t=(mWidth-padding)-floatX_6;
         rect5_y_t=(floatY*2+padding)-floatY_6;
     }
-    //第5格移动到第5格
+    //第5格移动到第7格
     private void view_5_7(){
         rect5_x_0=padding;
         rect5_x_1=floatX+padding;
@@ -1520,7 +1520,7 @@ public class NumberHrdView extends View{
         rect5_x_t=(floatX+padding)/2;
         rect5_y_t=(mHeight-padding)-floatY_6;
     }
-    //第5格移动到第5格
+    //第5格移动到第8格
     private void view_5_8(){
         rect5_x_0=padding+floatX;
         rect5_x_1=floatX*2+padding;
@@ -1700,7 +1700,7 @@ public class NumberHrdView extends View{
         rect6_x_t=(mWidth-padding)-floatX_6;
         rect6_y_t=(floatY*2+padding)-floatY_6;
     }
-    //第6格移动到第6格
+    //第6格移动到第7格
     private void view_6_7(){
         rect6_x_0=padding;
         rect6_x_1=floatX+padding;
@@ -1709,7 +1709,7 @@ public class NumberHrdView extends View{
         rect6_x_t=(floatX+padding)/2;
         rect6_y_t=(mHeight-padding)-floatY_6;
     }
-    //第6格移动到第6格
+    //第6格移动到第8格
     private void view_6_8(){
         rect6_x_0=padding+floatX;
         rect6_x_1=floatX*2+padding;
@@ -1899,7 +1899,7 @@ public class NumberHrdView extends View{
         rect7_x_t=(floatX+padding)/2;
         rect7_y_t=(mHeight-padding)-floatY_6;
     }
-    //第7格移动到第7格
+    //第7格移动到第8格
     private void view_7_8(){
         rect7_x_0=padding+floatX;
         rect7_x_1=floatX*2+padding;
