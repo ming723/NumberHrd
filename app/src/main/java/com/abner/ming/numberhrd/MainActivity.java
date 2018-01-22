@@ -84,12 +84,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+   private boolean alertShow=true;
     private void toastMsg(String message){
-        Alerter.create(MainActivity.this).
-                setText(message).
-                setDuration(2000).
-                setBackgroundColor(R.color.colorAccent).
-                show();
+        if(alertShow){
+            alertShow=false;
+            Alert mAlerter = Alerter.create(MainActivity.this).
+                    setText(message).
+                    setDuration(2000).
+                    setBackgroundColor(R.color.colorAccent).
+                    show();
+            mAlerter.setOnHideListener(new OnHideAlertListener() {
+                @Override
+                public void onHide() {
+                    alertShow=true;
+                    Log.i("setOnHideListener","hint");
+                }
+            });
+        }
     }
     private void createHistory(){
         try {
