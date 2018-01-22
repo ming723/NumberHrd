@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if(TextUtils.isEmpty(scale)){
                     SharedPreUtils.put(MainActivity.this,"scale",""+lastTime);
                 }else{
-                    if(Integer.parseInt(scale)<lastTime){
+                    if(Integer.parseInt(scale)>lastTime){
                         SharedPreUtils.put(MainActivity.this,"scale",""+lastTime);
                     }
                 }
